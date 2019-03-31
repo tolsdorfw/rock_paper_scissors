@@ -1,0 +1,158 @@
+/* This resets any default margin and padding CSS from all browsers and sets box sizing to border box for all elements */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.bg {
+    background-image: url('../images/background.jpg');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 640px;
+}
+
+.title {
+    background-image: url('../images/title.png');
+    background-color: #b22234;
+    background-position: center;
+    height: 100%;
+    min-height: 640px;
+    width: 27px;
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 1px solid black;
+    position: relative;
+    left: 30px;
+}
+
+.select {
+    position: absolute;
+    top: 150px;
+    left: 130px;
+}
+
+.select div {
+    padding: 10px;
+}
+
+#paper {
+    margin: 50px 0;
+    display: inline-block;
+}
+
+.main {
+    border: 1px solid black;
+    position: absolute;
+    top: 30px;
+    left: 350px;
+    display: grid;
+    grid-template-rows: 100px 400px 100px;
+    grid-template-columns: 200px 400px 200px;
+    grid-gap: 3px;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+.item1 {
+    grid-row: 1;
+    grid-column: 1 / span 3;
+    background-color: black;
+    padding-top: 20px;
+    font-size: 42px;
+}
+
+.item2, .item4 {
+    padding-top: 20px;
+}
+
+.item2 {
+    grid-row: 2;
+    grid-column: 1;
+    background-color: black;
+}
+
+.item3 {
+    grid-row: 2;
+    grid-column: 2;
+    background-color: black;
+}
+
+.item4 {
+    grid-row: 2;
+    grid-column: 3;
+    background-color: black;
+}
+
+.item5 {
+    grid-row: 3;
+    grid-column: 1 / span 3;
+    background-color: black;
+}
+
+.results div {
+    display: inline-block;
+    position: relative;
+    left: 0px;
+}
+
+#player2_selection img {
+    transform: scaleX(-1);
+}
+
+#paper:hover, #rock:hover, #scissors:hover {
+    border-radius: 100%;
+    background-color: #62cb5d;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.select img {
+    height: 80px;
+    width: 80px;
+}
+
+.score {
+    padding-top: 130px;
+    font-size: 42px;
+}
+
+.outcome {
+    padding-top: 30px;
+    font-weight: normal;
+}
+
+.selection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 130px;
+}
+
+#replay {
+    visibility: hidden;
+}
+
+#replay:hover {
+    cursor: pointer;
+}
+
+#player1_selection, #player2_selection {
+    height: 130px;
+    width: 130px;
+}
+
+
